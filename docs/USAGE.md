@@ -135,31 +135,16 @@ After migration, you'll see:
 
 ## Data Mapping
 
-Understanding how data is mapped:
+For detailed information about how data is mapped from CGBlog to LISE, see the [Data Mapping Guide](DATA_MAPPING.md).
 
-### Articles → Items
+### Quick Reference
 
-| CGBlog Field | LISE Field |
-|--------------|------------|
-| `cgblog_title` | `title` |
-| `cgblog_data` | `data` |
-| `summary` | `summary` |
-| `cgblog_date` | `create_date` |
-| `status` | `active` (published=1, draft=0) |
-| `url` | `url` |
-| `author` | `author` |
+- **Articles** → **Items**: All article data is migrated to LISE items
+- **Categories** → **Categories**: Hierarchy and relationships preserved
+- **Custom Fields** → **Field Definitions**: Field types automatically converted
+- **Field Values** → **Item Field Values**: Linked to migrated items
 
-### Categories
-
-- Category hierarchy is preserved
-- Parent-child relationships maintained
-- Category order is preserved
-
-### Custom Fields
-
-- Field types are automatically mapped
-- Field definitions are migrated first
-- Field values are linked to articles
+See [Data Mapping Guide](DATA_MAPPING.md) for complete mapping details.
 
 ## Best Practices
 
@@ -213,14 +198,23 @@ Understanding how data is mapped:
 
 Configure module behavior:
 
-- **Module Friendly Name**: Customize name in navigation
-- **Show Donations Tab**: Toggle donations tab visibility
+- **Module Friendly Name**: Customize the module name in admin navigation
+- **Donations Tab**: Show/hide the donations tab
+
+Access settings via **Extensions → MAS CGBlog to LISE Migration → Admin Settings**
 
 ### Logging
 
-All migrations are logged to:
-- CMSMS Admin Log (Site Admin → Admin Log)
-- Module log files (`modules/MAS_CGBlogToLISE/logs/`)
+The module provides comprehensive logging:
+
+- **CMSMS Admin Log**: All migration activities are logged to **Site Admin → Admin Log**
+- **Module Log Files**: Detailed logs are stored in `modules/MAS_CGBlogToLISE/logs/`
+
+Log entries include:
+- Migration start/completion
+- Number of items migrated
+- Errors and warnings
+- Instance creation details
 
 ## Tips
 
