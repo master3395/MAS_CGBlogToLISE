@@ -8,7 +8,7 @@ A powerful CMS Made Simple module for migrating data from the CGBlog module to L
 
 ## Overview
 
-**MAS CGBlog to LISE Migration** simplifies the process of migrating your blog data from CGBlog to LISE (List Item Search Engine) instances in CMS Made Simple. Whether you're upgrading your content management system or consolidating your data, this module provides a seamless migration experience with comprehensive data mapping, preview capabilities, and detailed logging.
+**MAS CGBlog to LISE Migration** simplifies the process of migrating your blog data from CGBlog to LISE instances in CMS Made Simple. Whether you're upgrading your content management system or consolidating your data, this module provides a seamless migration experience with comprehensive data mapping, preview capabilities, and detailed logging.
 
 ## Features
 
