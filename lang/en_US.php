@@ -174,6 +174,19 @@ $lang['help'] = '<div class="mas-migration-help">
 
 // Changelog
 $lang['changelog'] = '<ul>
+<li><strong>Version 1.0.1, 06.01.26, master3395</strong>: Bug fixes and improvements
+    <ul>
+        <li>Fixed database column names (create_time/modified_time instead of create_date/modified_date)</li>
+        <li>Fixed content storage - article content and summaries now correctly stored in fieldval table</li>
+        <li>Added automatic creation of Content and Summary field definitions</li>
+        <li>Fixed field definition inserts to use correct LISE schema (name, alias, help, type, position, required, template, extra)</li>
+        <li>Removed duplicate statistics display in migration interface</li>
+        <li>Added visible labels for radio buttons in instance selection</li>
+        <li>Split MigrationEngine.php into smaller modules to comply with 500 line limit</li>
+        <li>Added Start Migration button to preview section</li>
+        <li>Fixed callback error for logging functionality</li>
+    </ul>
+</li>
 <li><strong>Version 1.0.0, 2025, master3395</strong>: Initial release
     <ul>
         <li>Migrate articles from CGBlog to LISE</li>

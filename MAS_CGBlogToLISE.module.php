@@ -32,7 +32,7 @@ class MAS_CGBlogToLISE extends CMSModule
     }
     
     function GetVersion() { 
-        return '1.0.0'; 
+        return '1.0.1'; 
     }
     
     function MinimumCMSVersion() { 
